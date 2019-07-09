@@ -34,9 +34,7 @@ public class RoutingController {
 			return new ResponseEntity<>(e.getResponseBodyAsString(), HttpStatus.BAD_REQUEST);
 		}
 
-		HttpHeaders responseHeaders = new HttpHeaders();
-		responseHeaders.add(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON_UTF8_VALUE);
-		return new ResponseEntity<>(exchange.getBody(), responseHeaders, HttpStatus.OK);
+		return new ResponseEntity<>(exchange.getBody(), HttpStatus.OK);
 	}
 
 }
