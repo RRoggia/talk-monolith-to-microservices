@@ -1,7 +1,7 @@
 package com.rroggia.http.engine.controller;
 
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ThreadBlockerController {
 	private static final int MILLISECONDS = 1000;
 
-	@PostMapping(value = "route", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@GetMapping(value = "route", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public String route(@RequestParam String delay) {
 		try {
 			Thread.sleep(Long.valueOf(delay) * MILLISECONDS);
