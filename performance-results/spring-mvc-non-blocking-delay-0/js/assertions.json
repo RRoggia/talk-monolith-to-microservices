@@ -1,0 +1,10 @@
+{
+  "simulation": "perf.LoadNonBlocking",
+  "simulationId": "loadnonblocking",
+  "start": 1562711139577,
+  "description": "",
+  "scenarios": ["Warm up"],
+  "assertions": [
+
+  ]
+}
