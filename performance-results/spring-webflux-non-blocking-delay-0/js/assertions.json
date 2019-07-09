@@ -1,0 +1,10 @@
+{
+  "simulation": "perf.WebFluxNonBlocking",
+  "simulationId": "webfluxnonblocking",
+  "start": 1562714048320,
+  "description": "",
+  "scenarios": ["Warm up"],
+  "assertions": [
+
+  ]
+}
